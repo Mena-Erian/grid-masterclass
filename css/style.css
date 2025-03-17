@@ -1,0 +1,375 @@
+p {
+    font-family: OpenSans;
+    color: rgb(159, 163, 167);
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+
+body,
+a {
+    font-family: OpenSans;
+}
+
+h2 {
+    font-family: Arvo;
+}
+span {
+    font-family: Montserrat;
+}
+
+section span {
+    font-weight: 700;
+    color: rgb(159, 163, 167);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+
+img {
+    width: 100%;
+}
+
+.card-1 {
+    grid-area: card-1;
+}
+.card-2 {
+    grid-area: card-2;
+}
+.card-3 {
+    grid-area: card-3;
+}
+.card-4 {
+    grid-area: card-4;
+}
+.card-5 {
+    grid-area: card-5;
+}
+.card-6 {
+    grid-area: card-6;
+}
+.card-7 {
+    grid-area: card-7;
+}
+.card-8 {
+    grid-area: card-8;
+}
+.card-9 {
+    grid-area: card-9;
+}
+.card-10 {
+    grid-area: card-10;
+}
+.card-11 {
+    grid-area: card-11;
+}
+.card-12 {
+    grid-area: card-12;
+}
+
+main {
+    grid-template-rows: repeat(5, auto) minmax(auto, 15rem) repeat(4, auto);
+
+    grid-template-areas:
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5"
+        "card-6"
+        "card-7"
+        "card-8"
+        "card-9"
+        "card-10";
+}
+
+/* how to use */
+
+#how-to-use a {
+    font-size: 0.875rem;
+    color: rgb(39, 185, 194);
+}
+#how-to-use span {
+    letter-spacing: 2px;
+}
+/* keyboard */
+#keyboard {
+    background-color: #f05638;
+}
+#keyboard h2 {
+    font-size: 1.375rem;
+    color: white;
+    font-weight: 700;
+}
+#keyboard img {
+    width: 10px;
+}
+/* imac */
+#i-mac img {
+    width: 170%;
+    transform: translateX(-65%);
+}
+#i-mac p {
+    font-size: 0.875rem;
+    word-break: 10;
+}
+#i-mac a {
+    letter-spacing: 2px;
+}
+/* twitter */
+#twitter {
+    color: white;
+    background-color: #38d5f4;
+}
+#twitter > div {
+    position: relative;
+}
+#twitter img {
+    width: 100px;
+}
+#twitter div {
+    display: flex;
+    align-items: center;
+}
+#twitter div > div:first-child {
+    --circle-r: 15rem;
+    width: var(--circle-r);
+    height: var(--circle-r);
+    margin: 0 auto;
+    background-color: #35cfed;
+}
+#twitter .core {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+}
+
+.core h2 {
+    font-size: 1.375rem;
+}
+/* best-choice */
+#best-choice {
+    background-color: #93b6b7;
+}
+#best-choice div > div:first-child {
+    background-color: #f05638;
+
+    color: white;
+    font-size: 0.625rem;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0 0.625rem !important;
+    letter-spacing: 1.5px;
+}
+#best-choice div .footer-best-choice {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.footer-best-choice img[alt="ipad"] {
+    position: absolute;
+    bottom: 0;
+    right: 4.1875rem;
+    transform: scale(1.1);
+}
+/* iCloud */
+#iCloud .core {
+    background-color: #8166b0;
+    --circle-c: 300px;
+    width: var(--circle-c);
+    transform: scaleX(var(--circle-c));
+}
+#iCloud .core img {
+    width: 80%;
+}
+/* popular */
+#popular div > div {
+    color: white;
+    background-color: #7bc424;
+    font-size: 0.625rem;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0 0.625rem !important;
+    letter-spacing: 1.5px;
+}
+/* tv */
+#tv {
+    background-color: #2c2c2c;
+    color: white;
+}
+#tv picture {
+    transform: translateX(-50px);
+}
+/* sm */
+/* @media (min-width: 576px) {
+    /* sm 
+    .card-sm-1 {
+        grid-area: card-1;
+    }
+    .card-sm-2 {
+        grid-area: card-2;
+    }
+    .card-sm-3 {
+        grid-area: card-3;
+    }
+    .card-sm-4 {
+        grid-area: card-4;
+    }
+    .card-sm-5 {
+        grid-area: card-5;
+    }
+    .card-sm-6 {
+        grid-area: card-6;
+    }
+    .card-sm-7 {
+        grid-area: card-7;
+    }
+    .card-sm-8 {
+        grid-area: card-8;
+    }
+    .card-sm-9 {
+        grid-area: card-9;
+    }
+    .card-sm-10 {
+        grid-area: card-10;
+    }
+    .card-sm-11 {
+        grid-area: card-11;
+    }
+    .card-sm-12 {
+        grid-area: card-12;
+    }
+    /* md 
+    .card-md-1 {
+        grid-area: card-1;
+    }
+    .card-md-2 {
+        grid-area: card-2;
+    }
+    .card-md-3 {
+        grid-area: card-3;
+    }
+    .card-md-4 {
+        grid-area: card-4;
+    }
+    .card-md-5 {
+        grid-area: card-5;
+    }
+    .card-md-6 {
+        grid-area: card-6;
+    }
+    .card-md-7 {
+        grid-area: card-7;
+    }
+    .card-md-8 {
+        grid-area: card-8;
+    }
+    .card-md-9 {
+        grid-area: card-9;
+    }
+    .card-md-10 {
+        grid-area: card-10;
+    }
+    .card-md-11 {
+        grid-area: card-11;
+    }
+    .card-md-12 {
+        grid-area: card-12;
+    }
+    /* lg 
+    .card-lg-1 {
+        grid-area: card-1;
+    }
+    .card-lg-2 {
+        grid-area: card-2;
+    }
+    .card-lg-3 {
+        grid-area: card-3;
+    }
+    .card-lg-4 {
+        grid-area: card-4;
+    }
+    .card-lg-5 {
+        grid-area: card-5;
+    }
+    .card-lg-6 {
+        grid-area: card-6;
+    }
+    .card-lg-7 {
+        grid-area: card-7;
+    }
+    .card-lg-8 {
+        grid-area: card-8;
+    }
+    .card-lg-9 {
+        grid-area: card-9;
+    }
+    .card-lg-10 {
+        grid-area: card-10;
+    }
+    .card-lg-11 {
+        grid-area: card-11;
+    }
+    .card-lg-12 {
+        grid-area: card-12;
+    }
+} */
+
+@media (min-width: 576px) {
+    main {
+        grid-template-areas:
+            "card-1 card-1"
+            "card-2 card-2"
+            "card-3 card-4"
+            "card-5 card-5"
+            "card-6 card-8"
+            "card-7 card-8"
+            "card-9 card-9"
+            "card-10 card-10";
+    }
+    /* best-choice */
+    #best-choice div .footer-best-choice {
+        position: absolute;
+    }
+}
+
+/* md */
+@media (min-width: 1024px) {
+    main {
+        grid-template-areas:
+            "card-2 card-2 card-1 card-1"
+            "card-3 card-5 card-5 card-8"
+            "card-4 card-7 card-7 card-8"
+            "card-6 card-9 card-10 card-10";
+        grid-template-rows: repeat(3, auto) 1fr;
+    }
+    #twitter div {
+        margin-top: 10px;
+    }
+    #best-choice div .footer-best-choice {
+        width: 70%;
+
+        margin: 0 auto;
+        /* transform: translateX(50%); */
+    }
+}
+
+/* fonts */
+@font-face {
+    font-family: Arvo;
+    src: url(../fonts/Arvo/Arvo-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\wght.ttf);
+}
